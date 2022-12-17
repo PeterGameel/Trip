@@ -1,0 +1,18 @@
+
+<div class="container">
+
+    <h2>Add a Station</h2>
+
+    <form #addForm="ngForm" (ngSubmit)="onaddstation(addForm)" >
+
+      <div class="form-group">
+        <label for="name">Station Name:</label>
+        <input type="text" ngModel class="form-control" name="stationName" placeholder="Station Name...">
+      </div>
+
+      <button [disabled]="addForm.invalid" type="submit" class="btn btn-primary">Add Station</button>
+      
+
+    </form>
+  </div>
+  

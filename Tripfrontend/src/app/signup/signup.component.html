@@ -1,0 +1,37 @@
+<body>
+    
+    <h2>Sign Up</h2>
+    
+
+
+    
+
+    <form #addForm="ngForm" (ngSubmit)="onaddadmin(addForm)">
+    
+      <div class="container">
+    
+        <label for="name"><b>Full Name</b></label>
+        <input type="text" ngModel placeholder="Enter your name..." name="fullName" required>
+
+        <label for="uname"><b>Username</b></label>
+        <input type="text" ngModel placeholder="Enter a Username..." name="userName" >
+        
+        <label for="email"><b>Email</b></label>
+        <input type="text" ngModel placeholder="Enter your Email Address..." name="emailOfAdmin" required>
+
+        <label for="password"><b>Password</b></label>
+        <input type="password" ngModel placeholder="Enter a Password..." name="adminPassword" >
+            
+        <button [disabled]="addForm.invalid" type="submit">Sign Up</button>
+        
+      </div>
+    
+      <div class="container" >
+        <button type="reset" class="resetbtn">Clear</button>
+        <span class="psw"><a routerLink='/login'>Have an Existing Account</a></span>
+      </div>
+    
+    </form>
+
+</body>
+    

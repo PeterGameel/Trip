@@ -1,0 +1,19 @@
+
+<div class="container">
+
+  <h2>Delete a Station</h2>
+
+  <form>
+
+    <div class="form-group">
+      <label for="id">Station ID:</label>
+      <input type="text" [(ngModel)]="station.StationID" class="form-control" name="stationID" placeholder="Enter Trip ID to be Deleted...">
+    </div>
+
+    <button type="submit" (click)="ondeletestation(station.StationID)" class="btn btn-primary">Delete Station</button>
+    
+  </form>
+</div>
+
+
+  <!-- (click)="ondeletestation(ID.value)" -->

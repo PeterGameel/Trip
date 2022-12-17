@@ -1,0 +1,17 @@
+
+<div class="container">
+
+    <h2>Delete a Trip</h2>
+
+    <form>
+
+      <div class="form-group">
+        <label for="id">Trip ID:</label>
+        <input type="text" [(ngModel)]="trip.TripID" class="form-control" name="tripID" placeholder="Enter Trip ID to be Deleted...">
+      </div>
+
+      <button type="submit" (click)="ondeletetrip(trip.TripID)" class="btn btn-primary">Delete Trip</button>
+      
+    </form>
+  </div>
+  

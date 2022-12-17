@@ -1,0 +1,45 @@
+
+<div class="container">
+
+    <h2>Create a Trip</h2>
+
+    <form #addForm="ngForm" (ngSubmit)="onaddtrip(addForm)" >
+
+      <!-- <div class="form-group">
+        <label for="id">Trip ID:</label>
+        <input type="id" ngModel class="form-control" id="tripid" name="tripID" placeholder="Trip ID...">
+      </div> -->
+
+      <!-- <div class="form-group">
+        <label for="id">Trip Name:</label>
+        <input type="text" ngModel class="form-control" id="tripName" name="" placeholder="Trip name...">
+      </div> -->
+
+      <div class="form-group">
+        <label for="name">Departure Location:</label>
+        <input type="text" ngModel class="form-control" id="slocation" name="fromStation" placeholder="Starting Location...">
+      </div>
+
+      <div class="form-group">
+        <label for="name">Arrival Location:</label>
+        <input type="text" ngModel class="form-control" id="slocation" name="toStation" placeholder="Your destination...">
+      </div>
+
+      <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="name">Date</label>
+        <input type="date" ngModel class="form-control" id="slocation" name="startTime" placeholder="">
+      </div>
+
+      <div class="form-group col-md-6">
+        <label for="name">Time</label>
+        <input type="time" ngModel class="form-control" name="endTime" id="slocation" >
+      </div>
+    </div>
+      
+      <button [disabled]="addForm.invalid" type="submit" class="btn btn-primary">Create Trip</button>
+      
+
+    </form>
+  </div>
+  
